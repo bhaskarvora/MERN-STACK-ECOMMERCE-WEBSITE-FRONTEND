@@ -155,8 +155,10 @@ const Login = () => {
       });
 
 
+    
+
       console.log("Login Response:", res);
-      if ("data" in res) {
+      if ("data" in res && res.data !== undefined) {
         toast.success(res.data.message);
       } else {
         const error = res.error as FetchBaseQueryError;
