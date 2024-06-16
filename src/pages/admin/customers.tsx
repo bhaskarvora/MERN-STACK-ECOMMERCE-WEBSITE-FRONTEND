@@ -1,4 +1,3 @@
-import { deleteUser } from "firebase/auth";
 import { ReactElement, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { FaTrash } from "react-icons/fa";

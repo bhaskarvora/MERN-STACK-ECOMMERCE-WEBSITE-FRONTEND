@@ -1,7 +1,6 @@
-import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { CartReducerInitialState } from "../../types/reducer-types";
 import { CartItem, ShippingInfo } from "../../types/types";
-import { act } from "react";
 
 
 const initialState: CartReducerInitialState = {
