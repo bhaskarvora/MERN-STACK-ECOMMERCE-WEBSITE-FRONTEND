@@ -256,7 +256,7 @@ const Login = () => {
         dispatch(userExist(data?.user!));
       } else {
         const error = res.error as FetchBaseQueryError;
-        const message = (error.data as MessageResponse).message;
+        const message = (error.data as MessageResponse)?.message;
         toast.error(message);
         dispatch(userNotExist());
       }
