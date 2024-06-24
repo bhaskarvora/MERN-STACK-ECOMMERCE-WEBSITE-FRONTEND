@@ -206,7 +206,6 @@
 
 // export default Login;
 
-
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { useState } from "react";
 import toast from "react-hot-toast";
@@ -231,9 +230,9 @@ const Login = () => {
       const { user } = await signInWithPopup(auth, provider);
 
       const res = await login({
-        name: user.displayName!,
-        email: user.email!,
-        photo: user.photoURL!,
+        name: user.displayName || "Unknown",
+        email: user.email || "Unknown",
+        photo: user.photoURL || "Unknown",
         gender,
         role: "user",
         dob: date,
@@ -246,12 +245,16 @@ const Login = () => {
         dispatch(userExist(data?.user!));
       } else {
         const error = res.error as FetchBaseQueryError;
-        const message = (error.data as MessageResponse).message;
+        const message = (error.data as MessageResponse)?.message || "Unknown error";
         toast.error(message);
         dispatch(userNotExist());
       }
-    } catch (error) {
-      toast.error("Sign In Fail");
+    } catch (error: any) {
+      if (error.code === "auth/popup-closed-by-user") {
+        toast.error("Sign-in popup closed by user.");
+      } else {
+        toast.error(error.message || "Sign-in failed");
+      }
     }
   };
 
