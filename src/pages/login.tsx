@@ -300,7 +300,6 @@
 // };
 
 // export default Login;
-
 import { GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "firebase/auth";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
@@ -326,27 +325,19 @@ const Login = () => {
         if (result) {
           const { user } = result;
 
-          console.log({
-            name: user.displayName!,
-            email: user.email!,
-            photo: user.photoURL!,
+          const loginPayload = {
+            name: user.displayName || "Unknown",
+            email: user.email || "Unknown",
+            photo: user.photoURL || "Unknown",
             gender,
             role: "user",
             dob: date,
             _id: user.uid,
-          });
+          };
 
-          const res = await login({
-            name: user.displayName!,
-            email: user.email!,
-            photo: user.photoURL!,
-            gender,
-            role: "user",
-            dob: date,
-            _id: user.uid,
-          });
+          const res = await login(loginPayload);
 
-          if (res.hasOwnProperty('data')) {
+          if ("data" in res) {
             const responseData = res.data as MessageResponse;
             toast.success(responseData.message);
             const data = await getUser(user.uid);
