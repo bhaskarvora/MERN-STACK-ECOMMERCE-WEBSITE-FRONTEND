@@ -301,7 +301,6 @@
 
 // export default Login;
 
-
 import { GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "firebase/auth";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
@@ -347,8 +346,9 @@ const Login = () => {
             _id: user.uid,
           });
 
-          if ("data" in res) {
-            toast.success(res.data.message);
+          if (res.hasOwnProperty('data')) {
+            const responseData = res.data as MessageResponse;
+            toast.success(responseData.message);
             const data = await getUser(user.uid);
             dispatch(userExist(data?.user!));
           } else {
@@ -406,5 +406,3 @@ const Login = () => {
 };
 
 export default Login;
-
-
