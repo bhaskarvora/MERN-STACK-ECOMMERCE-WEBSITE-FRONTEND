@@ -295,12 +295,11 @@
 // export default Login;
 
 
-
 import { GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "firebase/auth";
 import { useState, useEffect } from "react";
 import toast from "react-hot-toast";
 import { FcGoogle } from "react-icons/fc";
-import { auth } from "../firebase";
+import { auth } from "../firebase"; // Update the path if necessary
 import { getUser, useLoginMutation } from "../redux/api/userAPI";
 import { FetchBaseQueryError } from "@reduxjs/toolkit/query/react";
 import { MessageResponse } from "../types/api-types";
@@ -396,4 +395,3 @@ const Login = () => {
 };
 
 export default Login;
-

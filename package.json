@@ -28,7 +28,6 @@
     "sass": "^1.77.2"
   },
   "devDependencies": {
-    "@types/firebase": "^3.2.1",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@types/react-table": "^7.7.20",
