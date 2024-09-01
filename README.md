@@ -54,3 +54,81 @@ VITE_STRIPE_KEY=`Stripe Publishable Key`
 _fill each filed with your info respectively_
 
 
+## Screenshots of Web Application
+
+![Screenshot 2024-09-01 002637](https://github.com/user-attachments/assets/e840b6f0-5d26-4476-ba4f-2ae54ee1517b)
+Home Page
+
+![Screenshot 2024-09-01 002658](https://github.com/user-attachments/assets/40467adb-649e-4423-926d-5aaec13b4e56)
+Search Page
+
+![Screenshot 2024-09-01 002724](https://github.com/user-attachments/assets/01299634-9b32-48bc-b5e9-3b54578a8358)
+Filter of Products using Search
+
+![Screenshot 2024-09-01 002749](https://github.com/user-attachments/assets/2dc634ea-9fcc-49eb-b782-505c1057a039)
+Filter of Products using Price
+
+![Screenshot 2024-09-01 002807](https://github.com/user-attachments/assets/d514c22b-9cbc-4a87-8d5f-a5ec01de0f80)
+Filter of Products using Sort Low to High
+
+![Screenshot 2024-09-01 002827](https://github.com/user-attachments/assets/58a047a5-4dcd-4bfc-8148-942bc0381a4d)
+Filter of Products using Category
+
+![Screenshot 2024-09-01 134046](https://github.com/user-attachments/assets/794c6063-e359-4dde-a454-c6d2c7863efc)
+Discount Applied in Cart Page
+
+![Screenshot 2024-09-01 134455](https://github.com/user-attachments/assets/c15580b3-fcd2-4816-acfa-ff7bd5baee8a)
+Stripe Payment Integration
+
+![Screenshot 2024-09-01 135253](https://github.com/user-attachments/assets/ef5851fe-f374-4006-bb9a-a0b9b8930908)
+My Orders Page
+
+![Screenshot 2024-09-01 135307](https://github.com/user-attachments/assets/2f9871a1-eca9-4000-b5d4-e48cde076436)
+Dashboard Page containing transactions and My Orders Info
+
+![Screenshot 2024-09-01 135327](https://github.com/user-attachments/assets/c74a3b01-2b7f-4bbb-99d7-191696bec697)
+Dashboard Page showing Revenue, Users, Transactions, and Products
+
+![Screenshot 2024-09-01 135511](https://github.com/user-attachments/assets/e21c71d2-538c-4337-9e3d-f5a0ef10cb8b)
+Dashboard Page showing Gender Ratio and Top transactions
+
+![Screenshot 2024-09-01 135533](https://github.com/user-attachments/assets/867f8b73-d52a-4c01-8150-5ddbce65ba50)
+Product available in admin Panel
+
+![Screenshot 2024-09-01 135604](https://github.com/user-attachments/assets/7c159854-a9b5-4452-bb6e-7260d6d9d645)
+Customers 
+
+![Screenshot 2024-09-01 135637](https://github.com/user-attachments/assets/fc0979de-0568-4712-8d2c-d289da6b5882)
+Transactions
+
+![bar top prouducts](https://github.com/user-attachments/assets/4a1613a9-42d8-4cb2-9ee8-500cac227540)
+Bar Chart Showing Products and Customers
+
+![Screenshot 2024-09-01 135717](https://github.com/user-attachments/assets/c2f4ec2a-4eaf-4c5d-8435-64d60cc7d114)
+Bar Chart Showing Orders Throughout the Year
+
+![Screenshot 2024-09-01 135927](https://github.com/user-attachments/assets/9639b50d-4001-4489-80ae-590ca286c5fb)
+Line Chart Showing Active Users
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
